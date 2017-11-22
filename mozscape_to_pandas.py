@@ -29,7 +29,7 @@ df.to_excel('mozLinks.xls', index=False)
 
 
 anchorTermResults = client.anchorText(
-		'www.furniture-work.co.uk/office_chairs',
+		'ENTER_URL',
 		 cols=Mozscape.ATCols.freeCols2)
 
 df2 = pd.DataFrame(anchorTermResults)
@@ -59,20 +59,5 @@ fmrp == subdomain mozRank 10 point score
 fmrr == above raw score
 pda == domain authority
 
-default metrics when doing print(anchorText)
-
-apuef ==
-apuemp == external mozrank passed - as for apuimp, but external
-apuep ==
-apueu ==
-apuf ==
-apuif ==
-apuimp == internal mozrank passed - The amount of MozRank passed over all internal links
-								    with this term or phrase (on a normalized 10-point 
-								    scale)
-
-apuiu == internal pages linking - The number of internal pages on a root domain 
-								  linking to the target URL with this term or phrase
-aput == term
 """
 
